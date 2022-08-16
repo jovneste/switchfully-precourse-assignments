@@ -1,0 +1,1 @@
+Here I will post my solutions to the exercises in the Khan Academy SQL toturial
