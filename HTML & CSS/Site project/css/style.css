@@ -1,0 +1,181 @@
+/*general*/
+body{
+    padding-top: 2.5%;
+    
+    
+}
+
+h1{
+    width: fit-content;
+    margin: auto;
+    padding-bottom: 26px;
+    text-align: center;
+}
+/*style for navigation bar for mobile*/
+nav {
+    
+   
+    max-width: 900px;
+    margin: auto;
+    text-align: center;
+  }
+ul {
+    border: 1px solid #000;
+    /* De property list-style wordt normaal ingesteld op li-elementen. */
+    /* Maar omdat deze property overgeërfd wordt, kan ze ook ingesteld worden op het ul parent element */
+    list-style: none;
+    padding-right: 2rem;
+    
+    
+  }
+
+
+  nav ul li a {
+    
+    text-decoration:none;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    border: 2px solid rgb(96, 139, 168);
+    border-radius: 5px;
+    background-color: rgba(96, 139, 168, 0.2);
+    display: block;
+    
+    padding: 10px;
+    
+    margin: 10px;
+    text-align: center;
+    
+  }
+  li a:hover {
+    background-color: rgb(118, 105, 223);
+    color: white;
+  }
+  
+ /*centers rest of body*/
+ .info{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    margin-bottom:80px;
+    word-wrap: break-word;
+   
+ }
+ article{
+  padding: 10%;
+  border-style: double;
+  background-color: lightblue;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+/*header color*/
+ header h1 {
+    font-size: 70px;
+    font-weight: 600;
+    background-image: linear-gradient(to left, #97aad1, #4957b3);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  h2{
+    color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px black;
+   
+  }
+  
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(118, 105, 223);
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  }
+
+  /*scalable font sizes and images*/
+ html {
+    font-size: calc(15px + 0.390625vw);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+
+
+/*style for desktop and big screens*/
+
+
+  @media only screen and (min-width: 960px) {
+
+    
+    article{
+      display: flex;
+      align-items: center;
+      background-color: lightblue;
+      margin-bottom: 1em;
+      margin-top: 1em;
+    }
+
+    
+    
+    
+    body {
+      background-color:whitesmoke;
+      
+    }
+
+    nav{
+      text-align: center;
+      
+    }
+
+   
+  
+  
+    nav ul {
+      
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      text-align: center;
+      border: none;
+      
+    }
+    
+    li {
+      
+      display: inline-block;
+      width: max-content;
+      text-align: center;
+      padding: 0;
+      text-transform: uppercase;
+    }
+   
+    
+    img {
+      max-width: 200px;
+      max-height: 300px;
+      object-fit: contain;
+      margin-right: 30px;
+      flex: auto;
+      
+      
+    }
+    article{
+      padding: 1rem;
+      border: 2px solid rgb(96, 139, 168);
+      border-radius: 5px;
+    }
+    .description{
+      
+      max-width: 50rem;
+      
+
+    }
+   
+  }    

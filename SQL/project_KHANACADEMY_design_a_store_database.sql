@@ -26,3 +26,4 @@ INSERT INTO videogamestore VALUES (1, "COD", 56, 60,2018),
 
 select * from videogamestore order by price;
 select sum(amount) as total_units_in_stock from videogamestore;
+
